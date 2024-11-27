@@ -9,7 +9,7 @@ namespace Wakatime
     public class SettingsWindow : EditorWindow
     {
         static Settings settings;
-        [MenuItem("Services/vanbassum/WakaTime")]
+        [MenuItem("Services/Hackatime")]
         static void Init()
         {
             SettingsWindow window = (SettingsWindow)GetWindow(typeof(SettingsWindow), false, "Wakatime settings");
@@ -37,14 +37,14 @@ namespace Wakatime
                 EditorGUILayout.BeginHorizontal();
                 settings.ApiKey = EditorGUILayout.TextField("API key", settings.ApiKey);
                 if (GUILayout.Button("Get key"))
-                    Application.OpenURL("https://wakatime.com/api-key");
+                    Application.OpenURL("https://waka.hackclub.com/");
                 EditorGUILayout.EndHorizontal();
 
                 
                 //settings.ClientOptions = (ClientTypes)EditorGUILayout.EnumPopup("Client options", settings.ClientOptions);
 
                 if (GUILayout.Button("Open dashboard"))
-                    Application.OpenURL("https://wakatime.com/dashboard");
+                    Application.OpenURL("https://waka.hackclub.com/summary");
 
 
                 EditorGUILayout.BeginHorizontal();

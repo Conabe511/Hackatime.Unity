@@ -28,7 +28,7 @@ namespace Wakatime
 
 
         public string ProjectName => Application.productName;
-        public string ApiUri => "https://api.wakatime.com/api/v1/";
+        public string ApiUri => "https://waka.hackclub.com/api/compat/wakatime/v1";
         public TimeSpan HeartbeatFrequency => TimeSpan.FromMinutes(2);
 
 
